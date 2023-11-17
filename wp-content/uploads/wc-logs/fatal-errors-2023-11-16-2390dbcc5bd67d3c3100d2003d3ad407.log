@@ -1,0 +1,46 @@
+2023-11-16T04:49:34+00:00 CRITICAL Uncaught TypeError: ftp_nlist(): Argument #1 ($ftp) must be of type FTP\Connection, null given in /var/www/html/wp-admin/includes/class-wp-filesystem-ftpext.php:438
+Stack trace:
+#0 /var/www/html/wp-admin/includes/class-wp-filesystem-ftpext.php(438): ftp_nlist()
+#1 /var/www/html/wp-admin/includes/class-wp-filesystem-ftpext.php(456): WP_Filesystem_FTPext->exists()
+#2 /var/www/html/wp-admin/includes/class-wp-filesystem-ftpext.php(757): WP_Filesystem_FTPext->is_file()
+#3 /var/www/html/wp-admin/includes/file.php(1933): WP_Filesystem_FTPext->dirlist()
+#4 /var/www/html/wp-content/plugins/agile-store-locator/includes/helper.php(1162): copy_dir()
+#5 /var/www/html/wp-content/plugins/agile-store-locator/agile-store-locator.php(93): AgileStoreLocator\Helper::copy_assets()
+#6 /var/www/html/wp-includes/class-wp-hook.php(310): ASL_Store_locator->activate()
+#7 /var/www/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#8 /var/www/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#9 /var/www/html/wp-admin/includes/plugin.php(693): do_action()
+#10 /var/www/html/wp-admin/plugins.php(58): activate_plugin()
+#11 {main}
+  thrown in /var/www/html/wp-admin/includes/class-wp-filesystem-ftpext.php on line 438
+
+2023-11-16T04:49:36+00:00 CRITICAL Uncaught TypeError: ftp_nlist(): Argument #1 ($ftp) must be of type FTP\Connection, null given in /var/www/html/wp-admin/includes/class-wp-filesystem-ftpext.php:438
+Stack trace:
+#0 /var/www/html/wp-admin/includes/class-wp-filesystem-ftpext.php(438): ftp_nlist()
+#1 /var/www/html/wp-admin/includes/class-wp-filesystem-ftpext.php(456): WP_Filesystem_FTPext->exists()
+#2 /var/www/html/wp-admin/includes/class-wp-filesystem-ftpext.php(757): WP_Filesystem_FTPext->is_file()
+#3 /var/www/html/wp-admin/includes/file.php(1933): WP_Filesystem_FTPext->dirlist()
+#4 /var/www/html/wp-content/plugins/agile-store-locator/includes/helper.php(1162): copy_dir()
+#5 /var/www/html/wp-content/plugins/agile-store-locator/agile-store-locator.php(93): AgileStoreLocator\Helper::copy_assets()
+#6 /var/www/html/wp-includes/class-wp-hook.php(310): ASL_Store_locator->activate()
+#7 /var/www/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#8 /var/www/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#9 /var/www/html/wp-admin/plugins.php(194): do_action()
+#10 {main}
+  thrown in /var/www/html/wp-admin/includes/class-wp-filesystem-ftpext.php on line 438
+
+2023-11-16T04:49:37+00:00 CRITICAL Uncaught TypeError: ftp_nlist(): Argument #1 ($ftp) must be of type FTP\Connection, null given in /var/www/html/wp-admin/includes/class-wp-filesystem-ftpext.php:438
+Stack trace:
+#0 /var/www/html/wp-admin/includes/class-wp-filesystem-ftpext.php(438): ftp_nlist()
+#1 /var/www/html/wp-admin/includes/class-wp-filesystem-ftpext.php(456): WP_Filesystem_FTPext->exists()
+#2 /var/www/html/wp-admin/includes/class-wp-filesystem-ftpext.php(757): WP_Filesystem_FTPext->is_file()
+#3 /var/www/html/wp-admin/includes/file.php(1933): WP_Filesystem_FTPext->dirlist()
+#4 /var/www/html/wp-content/plugins/agile-store-locator/includes/helper.php(1162): copy_dir()
+#5 /var/www/html/wp-content/plugins/agile-store-locator/agile-store-locator.php(93): AgileStoreLocator\Helper::copy_assets()
+#6 /var/www/html/wp-includes/class-wp-hook.php(310): ASL_Store_locator->activate()
+#7 /var/www/html/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters()
+#8 /var/www/html/wp-includes/plugin.php(517): WP_Hook->do_action()
+#9 /var/www/html/wp-admin/plugins.php(194): do_action()
+#10 {main}
+  thrown in /var/www/html/wp-admin/includes/class-wp-filesystem-ftpext.php on line 438
+

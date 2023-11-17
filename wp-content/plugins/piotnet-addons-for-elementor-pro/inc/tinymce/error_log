@@ -1,0 +1,1 @@
+[11-Sep-2023 14:55:48 UTC] PHP Warning:  Trying to access array offset on value of type bool in /home3/pejdnwmy/public_html/wp-content/plugins/piotnet-addons-for-elementor-pro/inc/tinymce/tinymce-upload.php on line 54

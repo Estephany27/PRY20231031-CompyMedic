@@ -1,0 +1,182 @@
+/*****  Super Store Finder Wordpress Plugin by Joe Iz http://superstorefinder.net ****/
+
+.ssfAddNewLocation .newstore_map {
+    clear: both;
+    display: block;
+    height: 350px;
+    width: 100%;
+}
+.ssfAddNewLocation .ssf_option_input{
+	position: relative;
+	margin-bottom: 30px;
+	border-bottom: 1px solid #ccc;
+}
+
+.ssfAddNewLocation .ssf_option_input.ssf-no-border{
+	border-bottom: 0px;
+}
+
+.ssfAddNewLocation .ssf_option_input textarea,.ssfAddNewLocation .ssf_option_input textarea:focus {
+    border: 0px;
+    border-bottom: 1px solid #c7c7c7;
+    outline: none;
+    background-color: #fff;
+    line-height: 2rem;
+    padding: 0;
+    font-size: 1rem;
+    overflow: hidden;
+    -webkit-box-shadow: none;
+    -webkit-appearance: none;
+    box-shadow: none;
+	width:100%;
+	min-height:250px;
+}
+
+.ssfAddNewLocation .ssf_option_group input[type="radio"],
+.ssfAddNewLocation .ssf-inline-label{
+	display:inline-block;
+}
+
+
+.ssfAddNewLocation .ssf_option_group{
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+	display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+@media only screen and (min-width: 64.063em) {
+	.ssfAddNewLocation .ssfcol-2 {
+		width: -webkit-calc((100% - 60px)/2);
+		width: -moz-calc((100% - 60px)/2);
+		width: calc((100% - 60px)/2);
+	}
+}
+
+@media only screen and (max-width: 64em) {
+	.ssfAddNewLocation .ssfcol-2 {
+		width: 100%;
+	}
+}
+.ssfRequesttitle{
+   margin-bottom: 37px;
+   text-align: center;
+}
+
+.ssfAddNewLocation input[type="text"],
+.ssfAddNewLocation input[type="file"]{
+	outline: none;
+    margin: 0;
+    border: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    width: 100%;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+.ssfAddNewLocation .ssf_input_1{
+    padding: 9px 0;
+    color: #666;
+}
+
+.add-locationbody {
+    padding: 30px;
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.ssf-location-row {
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+#ssfAddNewLocation select.ssfContactEmail{
+    border: 0px solid #fff;
+    line-height: 1.5rem;
+    padding: 0;
+    display: block;
+    font-size: 1rem;
+    outline: none;
+    background-color: #fff;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    color: #1e1e1e;
+    width: 100%;
+    -webkit-box-shadow: none;
+    -webkit-appearance: none;
+    box-shadow: none;
+}
+
+.ssf-btn.ssf-btn-blue{
+	padding: 0.6em 0.4em;
+    border: 0;
+    border-radius: 5px;
+    outline: 0;
+    display: inline-block;
+    box-shadow: inset 0 -3px 0 rgba(0,0,0,0.2);
+    background: center center no-repeat #038cd6;
+    color: white;
+    font-family: 'Roboto Condensed', 'Roboto', 'Helvetica Neue Condensed', 'Helvetica Condensed', 'Helvetica Neue', Helvetica, 'Arial Condensed', Arial, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+input[type="submit"].ssf-btn:hover {
+    background-color: #0073b1;
+    color: #fff;
+	cursor:pointer;
+}
+
+/*.ssf-form-error{
+	border: 1px solid #ff23004a !important;
+}*/
+
+.ssf-form-error::placeholder { 
+  color: red;
+  opacity: 1; 
+}
+
+.nicEdit-selectTxt{
+	margin-top: -4px !important;
+	font-size: 10px !important;
+	height:16px  !important;
+}
+
+.ssfAjaxSubmit{
+	margin-left: 45%;
+}
+
+
+.ssf_gdpr_check {
+    width: 20px;
+}
+.ssf_gdpr_text{
+	width:90%;
+}
+.ssf_gdpr_check,
+.ssf_gdpr_text{
+	display:inline-block;
+	float:left;
+}
+
+.ssf_gdpr_text{
+	padding-left:10px;
+}
+
+.ssfgdpr{
+	display:block;
+	width:100%;
+}
+
+#ssf_gdpr_check.ssf_invalid {
+  outline: 2px solid #c00;
+}
+

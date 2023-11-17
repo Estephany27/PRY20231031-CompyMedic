@@ -1,0 +1,1 @@
+The according .po-files have been removed from the plugin´s distribution to keep the plugin´s size smaller.
