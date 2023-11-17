@@ -1,0 +1,1 @@
+// Cuando se carga la ventana, ocultar el preloader

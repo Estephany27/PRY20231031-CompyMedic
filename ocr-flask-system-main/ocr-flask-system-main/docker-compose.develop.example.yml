@@ -1,0 +1,17 @@
+version: "3.4"
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: dev
+    working_dir: /code
+    volumes:
+      - .:/code:rw
+  redis:
+    image: redis:alpine3.18
+    volumes:
+      - cache:/data
+volumes:
+  cache:
+    driver: local

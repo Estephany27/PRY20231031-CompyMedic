@@ -1,0 +1,18 @@
+version: "3.4"
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: prod
+    command: gunicorn -w 4 -b 0.0.0.0:5000 app:app
+    volumes:
+      - .:/code:rw
+      - /etc/letsencrypt/archive/compymedic.duckdns.org:/var/certs:ro
+  redis:
+    image: redis:alpine3.18
+    volumes:
+      - cache:/data
+volumes:
+  cache:
+    driver: local

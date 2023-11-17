@@ -1,0 +1,15 @@
+{% extends "layout.jinja2" %}
+{% block content %}
+<div class="media">
+    <img class="rounded mx-auto d-block mh-100" src={{ url_for('process_recipe_blueprint.static', filename='uploads/' +
+        img_filename) }} width="30%" height="30%" alt={{ img_filename }}>
+    <div class="media-body">
+        <ul class="list-group">
+            {% for word in lists.get("glossary_kywords") %}
+            <a href="https://microservicio.compymedics.site/compare/?query={{word}}"
+                class="list-group-item list-group-item-action"> {{word}}</a>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends "layout.jinja2" %}
+{% block content %}
+<table class="table table-sm">
+    <thead>
+        <tr>
+            <th id="tienda-col" scope="col" class="text-left">Tienda</th>
+            <th scope="col">Producto</th>
+            <th scope="col" class="text-center">Precio Online</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for store in stores %}
+        <tr>
+            <th class="text-center align-middle">
+                <figure class="figure">
+                    <img id="logo-store" class="figure-img img-fluid rounded" src={{"https://microservicio.compymedics.site/static/img/stores/"~store.photo }}>
+                </figure>
+            </th>
+            <td class="text-center align-middle">
+                <div class="d-flex text-truncate p-0 m-0 ">
+                    <div class="align-self-center">
+                        <figure class="figure">
+                            <img height="50px" width="50px" class="figure-img img-fluid rounded" src="{{
+                                store.product.photo }}"
+                                onerror="this.src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA6ElEQVR4nOXWwQnCMBTG8f8SFoo6kIIbiPd2AY92BsFNpO6hB+8tHtxBiBRTKCbaNL4EoR88KCTw44XwGhh7MiCJjeaAAi6x8Qlw1vgVSGPiie5YBagaWNjQVQS8ssEPYGM5dukyojS+Fuj8CEyBGVC6wFJ4A7aZu8ISuDesfsRLjTfoaSjc1L6zLnXbjbxv2JlbRG67ke5iwefYOj/oSZfqb2+4L138bpntRSjYZbZvQ8G+uAjsg4vBLrgKBffhKiT8DVdDJ5drDfmlGqkF8L7ZXpns61kSEr8BS8b2gMxjwi2exUb/K081omTB7YaLuQAAAABJRU5ErkJggg==';">
+                        </figure>
+                        {{ store.product.name }}
+                    </div>
+                </div>
+            </td>
+            <td class="text-center align-middle">S/ {{ store.product.price }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
